@@ -1,0 +1,23 @@
+.sec-2-font-h1
+{
+    font-family: 'Cardo', serif;
+    font-size: 90px;
+}
+.sec-2-font-h2
+{
+    font-family: 'Cardo', serif;
+    font-size: 40px;
+}
+.sec-2-font-p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.font-famali
+{
+    font-family: 'Cardo', serif;
+}
+.card-img {
+    height: 200px; /* Set the height as desired */
+    object-fit: cover; /* Maintain aspect ratio */
+}

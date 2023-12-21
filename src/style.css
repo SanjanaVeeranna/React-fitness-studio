@@ -1,0 +1,15 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #0e3d61;
+  }
+  
+  body {
+    background-color: #000000;
+  }
+  
+  .nav-main-container{
+    font-size: medium;
+    color: black;
+
+}
