@@ -23,12 +23,12 @@ const UpperBody = () => {
   return (
     <div className="m-5 d-flex justify-content-between">
       {users.map((user) => (
-        <div className="use-card border align-items-center hover-shadow p-2">
-          <div className="text-center">
+        <div className="use-card border hover-shadow p-2" key={user.id}>
+          <div>
             {user.first_name} {user.last_name}
           </div>
-          <img src={user.avatar} alt={`${user.first_name}'s avatar`} className="d-flex align-items-center justify-content-center" />
-          <div className="text-center">
+          <img src={user.avatar} alt={`${user.first_name}'s avatar`} />
+          <div>
             {user.email}
           </div>
         </div>
