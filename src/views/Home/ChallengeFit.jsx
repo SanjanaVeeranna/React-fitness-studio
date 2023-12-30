@@ -4,8 +4,10 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
+import { useNavigate } from 'react-router-dom';
 
 function Section3() {
+  const navigate = useNavigate();
   return (
     <div>
         <section>
@@ -20,7 +22,8 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Upper Body Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              
             </div>
           </Card.Body>
           </Card>
@@ -30,7 +33,7 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Lower Body Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
             </div>
             </Card.Body>
           </Card>
@@ -40,7 +43,7 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Movement Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
             </div>
             </Card.Body>
           </Card>
@@ -52,7 +55,7 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Cardio Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
             </div>
             </Card.Body>
           </Card>
@@ -62,7 +65,7 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Core-Abbs Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
             </div>
             </Card.Body>
           </Card>
@@ -71,7 +74,7 @@ function Section3() {
             <Card.Body className='p-2 border rounded'>
             <div className="d-flex align-items-center justify-content-between">
               <Card.Title className='fw-bold'>Warm-UP Challenge</Card.Title>
-              <Button variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
+              <Button onClick={()=>{navigate('/upperBody')}} variant="outline-danger" className='fw-semibold pl-4'>JOIN NOW</Button>
             </div>
             </Card.Body>
           </Card>

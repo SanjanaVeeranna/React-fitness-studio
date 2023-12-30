@@ -11,6 +11,7 @@ import Section6 from './views/Home/ContactFit';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
+import UpperBody from './components/UpperBody';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/benefits" element={<Section4 />} />
         <Route path="/gallery" element={<Section5 />} />
         <Route path="/contact" element={<Section6 />} />
+        <Route path="/upperBody" element={<UpperBody />} />
       </Routes>
       <Footer />
     </BrowserRouter>
