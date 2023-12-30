@@ -5,16 +5,16 @@ import '../Styles/UseCard.css';
 const UpperBody = () => {
   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const userData = await getUpperBodyData();
-        setUsers(userData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
+  const fetchData = async () => {
+    try {
+      const userData = await getUpperBodyData();
+      setUsers(userData);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, []);
 

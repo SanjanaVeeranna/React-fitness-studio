@@ -7,15 +7,9 @@ import Container from 'react-bootstrap/esm/Container';
 
 function Section2() {
 
-  const aboutSectionRef = useRef(null);
-
-  // const aboutSection = document.getElementById('about-section');
-  // const aboutScrollPosition = aboutSection.offsetTop;
-  // console.log(aboutScrollPosition)
   return (
     <>
-    
-{/* <Header scrollPosition={aboutScrollPosition} /> */}
+  
 <div id='about-section' className="d-flex">
 
 <section className='py-5 my-4 flex-grow-1' style={{ backgroundColor: 'white' }}>
