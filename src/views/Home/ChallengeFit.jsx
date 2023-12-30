@@ -6,16 +6,14 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
 import { useNavigate } from 'react-router-dom';
 
-function Section3() {
+const  Section3 = () => {
   const navigate = useNavigate();
   return (
     <div>
         <section>
         <div className='pt-3 pb-5'>
                 <h1 style={{textAlign:'center', color:'#cc3d00', fontSize: '3.5em'}} className="sec-2-font">CHALLENGE YOURSELF</h1>
-                
-            </div>
-
+        </div>
         <CardGroup>
           <Card className='m-3' style={{ border: '4px solid #cc3d00' }}>
           <Card.Img variant="top" src="https://static.wixstatic.com/media/c837a6_be3f2b7431d748059fa9104b595c91ab~mv2.jpg/v1/fit/w_1000,h_800,al_c,q_90/file.webp" className='card-img'/>

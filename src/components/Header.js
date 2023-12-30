@@ -1,22 +1,26 @@
-import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import React from 'react';
 import '../Styles/Header.css';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
 
-const scrollToAboutSection = (secId) => {
-  const section = document.getElementById(secId);
-  const scrollPosition = section.offsetTop;
+  const navigate = useNavigate(); 
 
-  window.scrollTo({
-    top: scrollPosition,
-    behavior: 'smooth',
-  });
-};
+  const location = useLocation();
+  const isHome = location.pathname === '/home';
+
+  const scrollToAboutSection = (secId) => {
+    const section = document.getElementById(secId);
+    const scrollPosition = section.offsetTop;
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <header>
@@ -28,25 +32,27 @@ const scrollToAboutSection = (secId) => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="m-auto" style={{cursor: 'pointer'}}>
-              <div className='color-sec py-1'>HOME</div>
               <div onClick={()=>{
-                scrollToAboutSection('about')
+                navigate('/home');
+              }} className='color-sec py-1'>HOME</div>
+              <div onClick={()=>{
+                isHome ? scrollToAboutSection('about') : navigate('/about');
               }} className='color-sec py-1'>ABOUT</div>
               <div onClick={()=>{
-                scrollToAboutSection('challenges')
+                isHome ? scrollToAboutSection('challenges') : navigate('/challenges');
               }} className='color-sec py-1'>CHALLENGES</div>
               <div onClick={()=>{
-                scrollToAboutSection('benefits')
+                isHome ? scrollToAboutSection('benefits') : navigate('/benefits');
               }} className='color-sec py-1'>BENEFITS</div>
               <div onClick={()=>{
-                scrollToAboutSection('gallery')
+                isHome ? scrollToAboutSection('gallery') : navigate('/gallery');
               }} className='color-sec py-1'>GALLERY</div>
               <div onClick={()=>{
-                scrollToAboutSection('contact')
+                isHome ? scrollToAboutSection('contact') : navigate('/contact');
               }} className='color-sec py-1'>CONTACT</div>
             </Nav>
             <Nav style={{ color: 'white' }}>
-              <Button variant="outline-danger" className='my-2 fw-semibold' style={{ color: 'white', borderColor: 'white' }}>LOG IN</Button>
+              <div onClick={() => {navigate('/login')}} className='my-2 mx-1 border p-2 fw-semibold login-button'>LOG IN</div>
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,6 +1,5 @@
 import '../../Styles/AboutFit.css';
-import React, {useRef} from 'react';
-import Header from '../../components/Header';
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
@@ -47,4 +46,4 @@ function Section2() {
   )
 }
 
-export default Section2
+export default Section2;

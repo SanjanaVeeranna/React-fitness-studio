@@ -10,9 +10,6 @@ const Section6 = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Your form submission logic goes here
-
-    // Clear the form fields after submission
     setFirstName('');
     setLastName('');
     setEmail('');
