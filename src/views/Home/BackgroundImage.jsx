@@ -1,12 +1,22 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import './Section1.css';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import '../../Styles/BackgroundImage.css';
+import Section2 from './AboutFit';
+import Section3 from './ChallengeFit';
+import Section4 from './BenefitsFit';
+import Section5 from './GalleryFit';
+import Section6 from './ContactFit';
+import Footer from '../../components/Footer';
 import React from 'react'
 import { Container } from 'react-bootstrap';
 
 function Section1() {
+
     return (
-        <div>
+    <div>
+
             <section>
                 
                 <div className='image'>
@@ -31,7 +41,17 @@ function Section1() {
                     
                 </div>
             </section>
-        </div>
+
+   
+     <div id='about'><Section2 /></div>
+     <div id='challenges'><Section3 /></div>
+     <div id= 'benefits'><Section4 /></div>
+     <div id= 'gallery'><Section5 /></div>
+     <div id= 'contact'><Section6 /></div>
+    
+     </div>
+
+
     )
 }
 

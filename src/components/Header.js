@@ -1,58 +1,59 @@
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import React from 'react';
-import './Header.css'
+import '../Styles/Header.css';
 
 function Header() {
-    return (
-        <div>
-            <header>
-            <Navbar collapseOnSelect expand="lg" style={{background:'#cc3d00'}}>
-      <Container >
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="m-auto ">
-          <Nav.Link className='color-sec py-1'>HOME</Nav.Link>
-          <Nav.Link className='color-sec py-1'>ABOUT</Nav.Link>
-          <Nav.Link className='color-sec py-1'>CHALLENGES</Nav.Link>
-          <Nav.Link className='color-sec py-1'> BENEFITS</Nav.Link>
-          <Nav.Link className='color-sec py-1'>GALLERY</Nav.Link>
-          <Nav.Link className='color-sec py-1'>CONTACT</Nav.Link>
-          </Nav>
-          <Nav style={{color:'white'}}>  
-            <Button variant="outline-danger" className='my-2 fw-semibold' style={{ color: 'white', borderColor: 'white' }}>LOG IN</Button>{' '}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+
+const scrollToAboutSection = (secId) => {
+  const section = document.getElementById(secId);
+  const scrollPosition = section.offsetTop;
+
+  window.scrollTo({
+    top: scrollPosition,
+    behavior: 'smooth',
+  });
+};
+
+  return (
+    <header>
+      <Navbar collapseOnSelect expand="lg" style={{ background: '#cc3d00' }}>
+        <Container>
+          <Navbar.Brand>
+            <h1 style={{ textAlign: 'left', color: 'white', fontSize: '2.5em', paddingTop: '5px', paddingBottom: '5px'}} className="sec-2-font fw-boldS">BASE-FIT</h1>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="m-auto" style={{cursor: 'pointer'}}>
+              <div className='color-sec py-1'>HOME</div>
+              <div onClick={()=>{
+                scrollToAboutSection('about')
+              }} className='color-sec py-1'>ABOUT</div>
+              <div onClick={()=>{
+                scrollToAboutSection('challenges')
+              }} className='color-sec py-1'>CHALLENGES</div>
+              <div onClick={()=>{
+                scrollToAboutSection('benefits')
+              }} className='color-sec py-1'>BENEFITS</div>
+              <div onClick={()=>{
+                scrollToAboutSection('gallery')
+              }} className='color-sec py-1'>GALLERY</div>
+              <div onClick={()=>{
+                scrollToAboutSection('contact')
+              }} className='color-sec py-1'>CONTACT</div>
+            </Nav>
+            <Nav style={{ color: 'white' }}>
+              <Button variant="outline-danger" className='my-2 fw-semibold' style={{ color: 'white', borderColor: 'white' }}>LOG IN</Button>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </header>
-        </div>
-    )
+  );
 }
 
 export default Header;
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// const Header = () => {
-//   return (
-//     <>
-//       <div className="nav-main-container">
-//         <p>FITNESS STUDIO</p>
-//       <div className="nav-links-container">
-//         <Link to="/home">Home</Link>
-//         <Link to="/about">About</Link>
-//         <Link to="/challenges">Challenges</Link>
-//         <Link to="/benefits">Benefits</Link>
-//         <Link to="/gallery">Gallery</Link>
-//         <Link to="/contact">Contact</Link>
-//       </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Header;
+ 

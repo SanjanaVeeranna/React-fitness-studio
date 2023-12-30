@@ -1,13 +1,22 @@
-import './Section2.css';
-import React from 'react';
+import '../../Styles/AboutFit.css';
+import React, {useRef} from 'react';
+import Header from '../../components/Header';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Container from 'react-bootstrap/esm/Container';
 
 function Section2() {
-  return (
 
-<div className="d-flex">
+  const aboutSectionRef = useRef(null);
+
+  // const aboutSection = document.getElementById('about-section');
+  // const aboutScrollPosition = aboutSection.offsetTop;
+  // console.log(aboutScrollPosition)
+  return (
+    <>
+    
+{/* <Header scrollPosition={aboutScrollPosition} /> */}
+<div id='about-section' className="d-flex">
 
 <section className='py-5 my-4 flex-grow-1' style={{ backgroundColor: 'white' }}>
     <Container>
@@ -40,7 +49,7 @@ function Section2() {
   </section>
 
 </div>
-   
+  </>
   )
 }
 

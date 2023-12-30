@@ -1,4 +1,4 @@
-import './Section3.css';
+import '../../Styles/ChallengeFit.css';
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';

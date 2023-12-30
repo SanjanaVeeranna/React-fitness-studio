@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #cc3d00;
+  background-image: #e2967b
+}
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: #cc3d00
+}
+
+.label-style {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.input-style {
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: none; /* Remove default input border */
+  background-color: #f0f0f0; /* Background color for the input box */
+  border-radius: 4px; 
+}
+
+.auth-form-container,
+.login-form,
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 650px) {
+  .auth-form-container {
+    padding: 10px;
+    border: 1px solid #cc3d00;
+    border-radius: 10px;
+    margin: 10%;
+  }
+}
+
+
+label {
+    text-align: center;
+    padding: 10px 0px;
+    color: white; /* Change text color to white */
+    font-weight: bold; /* Make text bold */
+  }
+  
+  input {
+    margin: 20px 0px;
+    border: black;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  button {
+    border: #cc3d00;
+    background-color: #cc3d00;
+    padding: 5px;
+    border-radius: 10px;
+    color: #cc3d00;
+  }
+  #btn {
+    color: #cc3d00;
+  }
+
+
+  .link-btn {
+    background: none;
+    text-decoration: underline;
+    color: whitesmoke;
+  }
+  
