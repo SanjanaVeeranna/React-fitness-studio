@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar collapseOnSelect expand="lg" style={{ background: '#cc3d00' }}>
+      <Navbar collapseOnSelect expand="lg" style={{ background: '#213343' }}>
         <Container>
           <Navbar.Brand>
             <h1 style={{ textAlign: 'left', color: 'white', fontSize: '2.5em', paddingTop: '5px', paddingBottom: '5px'}} className="sec-2-font fw-boldS">BASE-FIT</h1>

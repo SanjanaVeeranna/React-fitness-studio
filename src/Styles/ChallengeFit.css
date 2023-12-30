@@ -15,3 +15,14 @@
     text-align: center;
     padding: 250px 0;
 }
+
+.card {
+    transition: transform 0.3s ease; 
+    border-radius: 10px;
+}
+
+.card:hover {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); 
+}

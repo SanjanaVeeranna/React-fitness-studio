@@ -8,7 +8,7 @@ const ImageCollage = () => {
     <Container style={containerStyle}>
 
             <div>
-                <h1 style={{textAlign:'center', color:'#cc3d00', fontSize: '3.5em'}} className="sec-2-font">GALLERY</h1> 
+                <h1 style={{textAlign:'center', color:'#213343', fontSize: '3.5em'}} className="sec-2-font">GALLERY</h1> 
             </div>
 
       <CardGroup>

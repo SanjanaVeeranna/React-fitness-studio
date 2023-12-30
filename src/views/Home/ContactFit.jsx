@@ -23,7 +23,7 @@ const Section6 = () => {
       <Row>
         <Col md={6}>
         <div className='pt-3 pb-5'>
-                <h1 style={{textAlign:'center', color:'#cc3d00', fontSize: '3.5em'}} className="sec-2-font">GET IN TOUCH</h1> 
+                <h1 style={{textAlign:'center', color:'#213343', fontSize: '3.5em'}} className="sec-2-font">GET IN TOUCH</h1> 
                 <h2 style={{ textAlign: 'center', color: 'black', fontSize: '1.5em'}} className="sec-2-font">Got Questions? Just Contact Us Below</h2>
             </div>
           <Form onSubmit={handleSubmit}>

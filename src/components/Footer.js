@@ -4,14 +4,14 @@ import {Col, Form} from 'react-bootstrap';
 
 function Footer() {
     return (
-        <div className=" bg py-5 col-md-12 col-xl-12 col-lg-12">
+        <div className="py-5 col-md-12 col-xl-12 col-lg-12" style={{ background: '#213343', color: 'white'}}>
         <Container>
         
             
             <div className="container">
             <footer className="row justify-content-between">
                 <div className="col-xl-4">
-                    <div  className=" bg1">
+                    <div  className="">
                         <h2>QUICK MENU</h2>
                         <p>About</p>
                         <p>Challenges</p>
