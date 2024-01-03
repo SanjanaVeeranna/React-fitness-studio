@@ -20,7 +20,7 @@ const Section1 = () => {
                                 <Card.Body>
                                     <Card.Title style={{color:'white'} } className="fonts">Base Fit- Functional Fitness Studio</Card.Title>
                                     <Card.Text style={{color:'white'}} className="fonts-p">Where Fitness <br/>Becomes the Part of Your Lifestyle</Card.Text>
-                                    <Button variant="outline-danger" className='my-2 fw-semibold pl-4'>BOOK NOW</Button>{' '}
+                                    <Button variant="outline-danger" className='my-2 fw-semibold pl-4 '>BOOK NOW</Button>{' '}
                                 </Card.Body>
                             </Card>
                         </Container> 

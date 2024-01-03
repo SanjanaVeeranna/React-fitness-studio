@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
-  color: #cc3d00;
+  color: #213343;
   background-image: #e2967b
 }
 
@@ -15,7 +15,7 @@
   align-items: center;
   padding: 20px;
   margin: 20px;
-  background-color: #cc3d00
+  background-color: #213343
 }
 
 .label-style {
@@ -43,7 +43,7 @@
 @media screen and (min-width: 650px) {
   .auth-form-container {
     padding: 10px;
-    border: 1px solid #cc3d00;
+    border: 1px solid #213343;
     border-radius: 10px;
     margin: 10%;
   }
@@ -65,14 +65,14 @@ label {
   }
   
   button {
-    border: #cc3d00;
-    background-color: #cc3d00;
+    border: #213343;
+    background-color: #213343;
     padding: 5px;
     border-radius: 10px;
-    color: #cc3d00;
+    color: #213343;
   }
   #btn {
-    color: #cc3d00;
+    color: #213343;
   }
 
 
